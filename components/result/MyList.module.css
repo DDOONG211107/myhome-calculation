@@ -1,0 +1,37 @@
+.labels {
+  text-align: left;
+  background-color: rgb(90, 72, 72);
+  color: rgb(255, 252, 252);
+  margin: 0 10%;
+  /* padding: 0 0.5rem; */
+}
+
+.itemLabels {
+  text-align: left;
+  /* background-color: cornflowerblue; */
+  margin: 0.4rem 10%;
+  padding: 0 1rem 0 0;
+}
+
+.firstLabel {
+  /* margin: 0 15% 0 0; */
+  /* background-color: aquamarine; */
+  display: inline-block;
+  width: 11rem;
+}
+
+.secondLabel {
+  display: inline-block;
+  width: 8rem;
+}
+
+.thirdLabel {
+  display: inline-block;
+  width: 11rem;
+  /* background-color: yellow; */
+}
+
+.fourthLabel {
+  display: inline-block;
+  width: 6rem;
+}
