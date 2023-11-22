@@ -23,6 +23,7 @@ export default function Home() {
     <>
       <Link href="/comments">자유롭게 소통하기</Link>
       {/* <button onclick={showCommentsPageHandler}>자유롭게 소통하기</button> */}
+      <h2>11.22.19:54</h2>
       <h3>생산단축 퍼센트를 입력해주세요 (포션 제외)</h3>
       <input
         type="text"
