@@ -24,10 +24,14 @@ export default function Home() {
     <>
       <Head>
         <title>마이홈 계산기</title>
+        <meta
+          name="description"
+          content="마이홈의 생단 효율을 계산할 수 있어요"
+        />
       </Head>
       <Link href="/comments">자유롭게 소통하기</Link>
       {/* <button onclick={showCommentsPageHandler}>자유롭게 소통하기</button> */}
-      <h2>11.23.10:06</h2>
+      <h2>11.23.13:43</h2>
       <h3>생산단축 퍼센트를 입력해주세요 (포션 제외)</h3>
       <input
         type="text"

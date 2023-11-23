@@ -4,6 +4,8 @@ import Link from "next/link";
 import NewCommentForm from "@/components/comments/NewCommentForm";
 import { useRouter } from "next/router";
 import { MongoClient } from "mongodb";
+import { Fragment } from "react";
+import Head from "next/head";
 
 const DUMMY_COMMENTS = [
   {
@@ -50,12 +52,21 @@ export default function commentsPage(props) {
   }
 
   return (
-    <Card>
-      <h2>자유롭게 소통하기</h2>
-      <Link href="/">계산기로 돌아가기</Link>
-      <CommentsList comments={props.commentsArr} />
-      <NewCommentForm onAddComment={addCommentHandler} />
-    </Card>
+    <Fragment>
+      <Head>
+        <title>마이홈 계산기</title>
+        <meta
+          name="description"
+          content="마이홈의 생단 효율을 계산할 수 있어요"
+        />
+      </Head>
+      <Card>
+        <h2>자유롭게 소통하기</h2>
+        <Link href="/">계산기로 돌아가기</Link>
+        <CommentsList comments={props.commentsArr} />
+        <NewCommentForm onAddComment={addCommentHandler} />
+      </Card>
+    </Fragment>
   );
 }
 
