@@ -46,7 +46,7 @@ export default function commentsPage(props) {
 
     const data = await response.json();
     console.log(data);
-    router.replace("/comments");
+    router.push("/comments");
   }
 
   return (
