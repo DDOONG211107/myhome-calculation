@@ -91,6 +91,6 @@ export async function getStaticProps(context) {
         };
       }),
     },
-    revalidate: 60,
+    revalidate: 1,
   };
 }
