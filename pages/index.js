@@ -29,11 +29,17 @@ export default function Home() {
           content="마이홈의 생단 효율을 계산할 수 있어요"
         />
       </Head>
-      <Link href="/comments">자유롭게 소통하기</Link>
+      <div className="title">
+        <h2>마이홈 생단 계산기</h2>
+        <Link href="/comments">자유롭게 소통하기</Link>
+      </div>
       {/* <button onclick={showCommentsPageHandler}>자유롭게 소통하기</button> */}
-      <h2>11.26.21:50</h2>
+      {/* <h2>11.26.21:50</h2> */}
       <p></p>
-      <h3>생산단축 퍼센트를 입력해주세요 (모든 포션과 펫 포함)</h3>
+      <h3>
+        생산단축 퍼센트를 입력해주세요
+        <br /> (모든 포션과 펫 포함)
+      </h3>
       <input
         type="text"
         value={enteredPercent}

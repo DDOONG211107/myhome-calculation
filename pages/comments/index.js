@@ -60,20 +60,26 @@ export default function commentsPage(props) {
           content="마이홈의 생단 효율을 계산할 수 있어요"
         />
       </Head>
-      <Card>
+      <div className="title">
         <h2>자유롭게 소통하기</h2>
         <Link href="/">계산기로 돌아가기</Link>
-        <h2>
+      </div>
+      <div className="comments-warning">
+        <h3>
           절대 이곳에 개인정보 및 민감한 글을 작성하지 마세요.
           <br />
           관리자는 모든 글을 읽을 수 있습니다.
-        </h2>
-        <h3>게시판: 최근 30개의 글만 보여집니다.</h3>
-        <p>
-          작성된 글은 약 30초 후 게시됩니다.
-          <br />
-          글이 보이지 않는다면 약 1분 후 새로고침 해주세요.
-        </p>
+        </h3>
+      </div>
+      <div className="conmments-intro">
+        최근 30개의 글만 보여집니다.
+        <br />
+        작성된 글은 약 30초 후 게시됩니다.
+        <br />
+        글이 보이지 않는다면 약 1분 후 새로고침 해주세요.
+      </div>
+
+      <Card>
         <CommentsList comments={props.commentsArr} />
         <NewCommentForm onAddComment={addCommentHandler} />
       </Card>

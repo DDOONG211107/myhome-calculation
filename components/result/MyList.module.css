@@ -44,3 +44,47 @@
   display: inline-block;
   width: 6rem;
 }
+
+@media (max-width: 768px) {
+  .possibleItemLabels {
+    text-align: left;
+    background-color: rgb(167, 205, 255);
+    margin: 0rem 10%;
+    padding: 0.2rem 1rem 0 0.3rem;
+    display: block;
+    border-bottom: 1px solid #0d1014;
+    height: 6rem;
+  }
+
+  .impossibleItemlabels {
+    text-align: left;
+    /* background-color: rgb(255, 243, 243); */
+    margin: 0.2rem 10%;
+    padding: 0.2rem 1rem 0 0.3rem;
+    display: block;
+    border-bottom: 1px solid #0d1014;
+  }
+  .firstLabel {
+    margin: 0 0% 0 0;
+    /* background-color: aquamarine; */
+    display: block;
+    width: 11rem;
+    /* padding-left: 0.5rem; */
+  }
+
+  .secondLabel {
+    display: block;
+    width: 8rem;
+  }
+
+  .thirdLabel {
+    display: block;
+    width: 11rem;
+    /* background-color: yellow; */
+  }
+
+  .fourthLabel {
+    display: block;
+    width: 6rem;
+  }
+}
