@@ -37,6 +37,7 @@ export default function NewCommentForm(props) {
     <form className={classes.newCommentForm} onSubmit={submitHandler}>
       <label>작성자</label>
       <input type="text" value={enteredWriter} onChange={changeWriterHandler} />
+      <br />
       <label>제목</label>
       <input type="text" value={enteredTitle} onChange={changeTitleHandler} />
       <br />
