@@ -1,0 +1,7 @@
+.commentsList {
+  height: 30rem;
+  list-style: decimal;
+  text-align: left;
+  background-color: rgb(238, 243, 255);
+  overflow: scroll;
+}

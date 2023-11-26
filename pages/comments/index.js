@@ -63,6 +63,17 @@ export default function commentsPage(props) {
       <Card>
         <h2>자유롭게 소통하기</h2>
         <Link href="/">계산기로 돌아가기</Link>
+        <h2>
+          절대 이곳에 개인정보 및 민감한 글을 작성하지 마세요.
+          <br />
+          관리자는 모든 글을 읽을 수 있습니다.
+        </h2>
+        <h3>게시판: 최근 30개의 글만 보여집니다.</h3>
+        <p>
+          작성된 글은 약 30초 후 게시됩니다.
+          <br />
+          글이 보이지 않는다면 약 1분 후 새로고침 해주세요.
+        </p>
         <CommentsList comments={props.commentsArr} />
         <NewCommentForm onAddComment={addCommentHandler} />
       </Card>
@@ -77,7 +88,11 @@ export async function getStaticProps(context) {
   const db = client.db();
 
   const commentsCollection = db.collection("comments");
-  const comments = await commentsCollection.find().toArray();
+  const comments = await commentsCollection
+    .find()
+    .sort({ _id: -1 })
+    .limit(40)
+    .toArray();
 
   client.close();
   return {

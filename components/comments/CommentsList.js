@@ -1,15 +1,17 @@
+import classes from "./CommentsList.module.css";
+
 export default function CommentsList(props) {
   if (props.comments) {
     return (
-      <ul>
+      <ul className={classes.commentsList}>
         {props.comments.map((comment) => {
           return (
             <li key={comment.id}>
-              <label>{comment.title} </label>
-              <label>{comment.writer}</label>
+              <label>{"제목: " + comment.title} </label>
               <br />
-              {comment.comment}
+              <label>{"작성자: " + comment.writer}</label>
               <br />
+              {"내용: " + comment.comment}
               <br />
               <br />
             </li>

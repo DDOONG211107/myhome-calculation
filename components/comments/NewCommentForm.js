@@ -46,6 +46,8 @@ export default function NewCommentForm(props) {
         type="text"
         value={enteredComment}
         onChange={changeCommentHandler}
+        maxLength="500"
+        placeholder="최대 500자 가능"
       />
       <button>글 등록하기</button>
     </form>
