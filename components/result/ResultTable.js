@@ -14,14 +14,15 @@ export function ResultTable(props) {
       />
       <ul className={classes.list}>
         {resultArr.map((item) => {
-          // const floorTime = Math.floor(item.time * 100) / 100;
+          const floorTime = Math.floor(item.time * 100) / 100;
           return (
             <MyList
               isItem={true}
               name={item.name}
-              // time={floorTime}
-              time={item.time}
+              time={floorTime}
+              // time={item.time}
               portion={item.portion}
+              isPossible={item.isPossible}
               experience={item.exp}
               key={item.id}
             />

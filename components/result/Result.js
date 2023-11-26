@@ -65,7 +65,8 @@ export function Result(props) {
       </p>
 
       <hr className="line" />
-      <p>{percent}</p>
+      {/* <p>{percent}</p> */}
+
       <ResultTable resultArr={resultArr} />
     </Card>
   );

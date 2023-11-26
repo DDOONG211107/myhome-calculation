@@ -2,6 +2,7 @@ import dataArr from "./data/dataArr";
 
 const middleAmple = "중급 앰플 필요";
 const lowAmple = "하급 앰플 필요";
+const impossibleString = "현재 불가능";
 
 export function clickHanlder() {
   console.log("src폴더에 있는 calcultate에서 버튼을 눌렀습니다");
@@ -67,7 +68,7 @@ export function pickNumber(percent, even, three, five) {
 
 function pushDataToResultArr(data, typeNum, calculatedTime, arr) {
   if (isPicked(data, typeNum)) {
-    if (calculatedTime <= 60 * 60 && calculatedTime > 5 * 60) {
+    if (calculatedTime > 60 * 60) {
       arr.push({
         type: typeNum,
         name: data.name,
@@ -75,6 +76,18 @@ function pushDataToResultArr(data, typeNum, calculatedTime, arr) {
         exp: data.exp,
         id: data.id,
         bonus: data.bonus,
+        isPossible: false,
+        portion: impossibleString,
+      });
+    } else if (calculatedTime <= 60 * 60 && calculatedTime > 5 * 60) {
+      arr.push({
+        type: typeNum,
+        name: data.name,
+        time: calculatedTime / 60,
+        exp: data.exp,
+        id: data.id,
+        bonus: data.bonus,
+        isPossible: true,
         portion: middleAmple,
       });
       return;
@@ -86,6 +99,7 @@ function pushDataToResultArr(data, typeNum, calculatedTime, arr) {
         exp: data.exp,
         id: data.id,
         bonus: data.bonus,
+        isPossible: true,
         portion: lowAmple,
       });
       return;
@@ -115,6 +129,18 @@ export function pickCondition(
   // console.log(isMine, isTree, isFarm, isFish, isAnimal);
 
   dataArr.map((data) => {
+    if (percent === 0) {
+      arr.push({
+        type: data.type,
+        name: data.name,
+        time: data.time,
+        exp: data.exp,
+        id: data.id,
+        bonus: data.bonus,
+        isPossible: false,
+        portion: impossibleString,
+      });
+    }
     const calculatedTime = (data.time * percent) / 100;
     if (isMine) {
       pushDataToResultArr(data, 1, calculatedTime, arr);
@@ -134,7 +160,18 @@ export function pickCondition(
     }
 
     if (!isMine && !isTree && !isFarm && !isFish && !isAnimal) {
-      if (calculatedTime <= 60 * 60 && calculatedTime > 5 * 60) {
+      if (calculatedTime > 60 * 60) {
+        arr.push({
+          type: data.type,
+          name: data.name,
+          time: calculatedTime / 60,
+          exp: data.exp,
+          id: data.id,
+          bonus: data.bonus,
+          isPossible: false,
+          portion: impossibleString,
+        });
+      } else if (calculatedTime <= 60 * 60 && calculatedTime > 5 * 60) {
         //console.log(data);
         arr.push({
           type: data.type,
@@ -143,6 +180,7 @@ export function pickCondition(
           exp: data.exp,
           id: data.id,
           bonus: data.bonus,
+          isPossible: true,
           portion: middleAmple,
         });
         return;
@@ -154,6 +192,7 @@ export function pickCondition(
           exp: data.exp,
           id: data.id,
           bonus: data.bonus,
+          isPossible: true,
           portion: lowAmple,
         });
         return;
