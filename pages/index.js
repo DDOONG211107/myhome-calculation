@@ -26,12 +26,17 @@ export default function Home() {
         <title>마이홈 계산기</title>
         <meta
           name="description"
-          content="마이홈의 생단 효율을 계산할 수 있어요"
+          content="놀러와 마이홈의 생단 효율을 계산할 수 있어요"
         />
       </Head>
       <div className="title">
         <h2>마이홈 생단 계산기</h2>
-        <Link href="/comments">자유롭게 소통하기</Link>
+        <Link className="linkButton" href="/comments">
+          자유롭게 소통하기
+        </Link>
+        <Link className="linkButton" href="/release-note">
+          개발자 노트 보기
+        </Link>
       </div>
       {/* <button onclick={showCommentsPageHandler}>자유롭게 소통하기</button> */}
       {/* <h2>11.26.21:50</h2> */}

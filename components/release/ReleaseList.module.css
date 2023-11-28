@@ -1,0 +1,14 @@
+.releaseListDate {
+  /* font-weight: 900; */
+  display: block;
+}
+
+.releaseList {
+  text-align: left;
+  /* background-color: cornflowerblue; */
+}
+
+.releaseList hr {
+  width: 95%;
+  margin-left: 0;
+}

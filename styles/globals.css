@@ -31,9 +31,12 @@ body input {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.linkButton {
+  margin: 0 1rem;
+}
+
 h1,
 h2,
-h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif;

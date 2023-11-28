@@ -57,12 +57,14 @@ export default function commentsPage(props) {
         <title>마이홈 계산기</title>
         <meta
           name="description"
-          content="마이홈의 생단 효율을 계산할 수 있어요"
+          content="놀러와 마이홈의 생단 효율을 계산할 수 있어요"
         />
       </Head>
       <div className="title">
         <h2>자유롭게 소통하기</h2>
-        <Link href="/">계산기로 돌아가기</Link>
+        <Link href="/" className="linkButton">
+          계산기로 돌아가기
+        </Link>
       </div>
       <div className="comments-warning">
         <h3>

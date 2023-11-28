@@ -1,0 +1,10 @@
+.releaseNote {
+  /* background-color: cornflowerblue; */
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.releaseLists {
+  list-style: none;
+  text-align: left;
+}
