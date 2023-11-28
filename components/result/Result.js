@@ -10,12 +10,13 @@ import { ResultTable } from "./ResultTable";
 
 export function Result(props) {
   const percent = props.percent;
-  // type: 1,2,3,4,5 (광산, 나무, 농사, 낚시, 동물)
+  // type: 1,2,3,4,5 (광산, 목재, 과일나무, 농사, 동물, 낚시)
   const [isMine, setIsMine] = useState(false);
   const [isTree, setIsTree] = useState(false);
+  const [isFruit, setIsFruit] = useState(false);
   const [isFarm, setIsFarm] = useState(false);
-  const [isFish, setIsFish] = useState(false);
   const [isAnimal, setIsAnimal] = useState(false);
+  const [isFish, setIsFish] = useState(false);
   const [resultArr, setResultArr] = useState([]);
 
   // const [even, setEven] = useState(false);
@@ -34,9 +35,9 @@ export function Result(props) {
   useEffect(() => {
     // console.log(percent, isMine, isTree, isFarm, isFish, isAnimal);
     setResultArr(
-      pickCondition(percent, isMine, isTree, isFarm, isFish, isAnimal)
+      pickCondition(percent, isMine, isTree, isFruit, isFarm, isAnimal, isFish)
     );
-  }, [percent, isMine, isTree, isFarm, isFish, isAnimal]);
+  }, [percent, isMine, isTree, isFruit, isFarm, isFish, isAnimal, isFish]);
 
   // dataArr.map((data) => {
   //   if (data < num) {
@@ -48,6 +49,7 @@ export function Result(props) {
   // for (i = 1; i <= num; i++) {
   //   numArr.push(i);
   // }
+
   return (
     <Card>
       <p>결과</p>
@@ -55,13 +57,15 @@ export function Result(props) {
         <MyCheckBox value={isMine} setFunc={setIsMine} />
         <label>광산 채굴</label>
         <MyCheckBox value={isTree} setFunc={setIsTree} />
-        <label>나무</label>
+        <label>목재</label>
+        <MyCheckBox value={isFruit} setFunc={setIsFruit} />
+        <label>과일나무</label>
         <MyCheckBox value={isFarm} setFunc={setIsFarm} />
         <label>밭</label>
-        <MyCheckBox value={isFish} setFunc={setIsFish} />
-        <label>낚시</label>
         <MyCheckBox value={isAnimal} setFunc={setIsAnimal} />
         <label>가축</label>
+        <MyCheckBox value={isFish} setFunc={setIsFish} />
+        <label>낚시</label>
       </p>
 
       <hr className="line" />

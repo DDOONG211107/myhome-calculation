@@ -20,9 +20,9 @@ export function MyList(props) {
         }
       >
         <label className={classes.firstLabel}>{props.name}</label>
-        <label className={classes.secondLabel}>{props.time}</label>
+        <label className={classes.secondLabel}>{props.time} 분</label>
         <label className={classes.thirdLabel}>{props.portion}</label>
-        <label className={classes.fourthLabel}>{props.experience}</label>
+        <label className={classes.fourthLabel}>{props.experience} exp</label>
       </p>
     );
   }

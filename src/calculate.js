@@ -116,17 +116,17 @@ function isPicked(data, typeNum) {
   }
 }
 
-// type: 1,2,3,4,5 (광산, 나무, 농사, 낚시, 동물)
+// type: 1,2,3,4,5 (광산, 나무, 농사, 동물, 낚시)
 export function pickCondition(
   percent,
   isMine,
   isTree,
+  isFruit,
   isFarm,
-  isFish,
-  isAnimal
+  isAnimal,
+  isFish
 ) {
   const arr = [];
-  // console.log(isMine, isTree, isFarm, isFish, isAnimal);
 
   dataArr.map((data) => {
     if (percent === 0) {
@@ -149,17 +149,22 @@ export function pickCondition(
       console.log(data, calculatedTime);
       pushDataToResultArr(data, 2, calculatedTime, arr);
     }
-    if (isFarm) {
+    if (isFruit) {
+      console.log(data, calculatedTime);
       pushDataToResultArr(data, 3, calculatedTime, arr);
     }
-    if (isFish) {
+    if (isFarm) {
       pushDataToResultArr(data, 4, calculatedTime, arr);
     }
+
     if (isAnimal) {
       pushDataToResultArr(data, 5, calculatedTime, arr);
     }
+    if (isFish) {
+      pushDataToResultArr(data, 6, calculatedTime, arr);
+    }
 
-    if (!isMine && !isTree && !isFarm && !isFish && !isAnimal) {
+    if (!isMine && !isTree && !isFruit && !isFarm && !isFish && !isAnimal) {
       if (calculatedTime > 60 * 60) {
         arr.push({
           type: data.type,
