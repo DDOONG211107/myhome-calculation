@@ -1,10 +1,16 @@
 const releaseArr = [
   {
     date: "23.11.28",
+    id: "r5",
+    title: "생산 경험치 계산 기능 추가",
+    strArr: ["생단 퍼센트와 생산 경험치를 함께 계산할 수 있는 기능 구현"],
+  },
+  {
+    date: "23.11.28",
     id: "r4",
     title: "ui, ux 개선",
     strArr: ["모바일용 drawer 구현", "pc와 모바일 헤더 구현"],
-    isCompleted: false,
+    isCompleted: true,
   },
   {
     date: "23.11.28",

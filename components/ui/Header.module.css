@@ -7,10 +7,51 @@
   justify-content: space-between;
 }
 
+.navigation {
+  display: block;
+}
+
+.navigation ol {
+  display: flex;
+  list-style: none;
+  /* background-color: aliceblue; */
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  /* background-color: cornflowerblue; */
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: rgb(216, 233, 255);
+}
+
 .title {
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title a:hover {
+  color: rgb(216, 233, 255);
 }
 
 .hamburgerIcon {
@@ -18,6 +59,10 @@
 }
 
 @media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
   .hamburgerIcon {
     /* size: 6rem; */
     display: inline;

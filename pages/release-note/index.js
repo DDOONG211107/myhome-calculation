@@ -17,13 +17,13 @@ export default function releaseNotePage() {
       </Head>
       <div>
         <Header />
-        <div className="title">
+        {/* <div className="title">
           <h2>개발자 노트</h2>
           <Link href="/" className="linkButton">
             계산기로 돌아가기
           </Link>
-        </div>
-
+        </div> */}
+        <h3>개발자 노트</h3>
         <br />
         <h3 className="mobile-title">개발자 노트</h3>
         <hr className="line" />

@@ -62,12 +62,12 @@ export default function commentsPage(props) {
         />
       </Head>
       <Header />
-      <div className="title">
+      {/* <div className="title">
         <h2>자유롭게 소통하기</h2>
         <Link href="/" className="linkButton">
           계산기로 돌아가기
         </Link>
-      </div>
+      </div> */}
       <h3 className="mobile-title">소통 게시판 </h3>
       <hr className="mobile-line" />
       <div className="comments-warning">

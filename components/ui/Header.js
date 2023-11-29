@@ -25,7 +25,9 @@ export default function Header() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.title}>마이홈 생단 계산기</div>
+      <div className={classes.title}>
+        <Link href="/">마이홈 생단 계산기</Link>
+      </div>
       <div>
         {/* <button onClick={toggleDrawer}>Show</button> */}
         <GiHamburgerMenu
@@ -42,10 +44,10 @@ export default function Header() {
           <div>
             <ol className={classes.drawerLists}>
               <li onClick={clickCalculHandler}>
-                <Link href="/">생단 계산기</Link>
+                <Link href="/">마이홈 생단 계산기</Link>
               </li>
               <li onClick={clickCommentsHandler}>
-                <Link href="/comments">소통 게시판</Link>
+                <Link href="/comments">마이홈 소통 게시판</Link>
               </li>
               <li onClick={clickReleaseHandler}>
                 <Link href="/release-note">개발자 노트</Link>
@@ -54,6 +56,16 @@ export default function Header() {
           </div>
         </Drawer>
       </div>
+      <nav className={classes.navigation}>
+        <ol>
+          <li>
+            <Link href="/comments">소통 게시판</Link>
+          </li>
+          <li>
+            <Link href="/release-note">개발자 노트</Link>
+          </li>
+        </ol>
+      </nav>
     </header>
   );
 }
