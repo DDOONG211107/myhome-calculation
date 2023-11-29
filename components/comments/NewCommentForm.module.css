@@ -1,5 +1,54 @@
-.contentInput {
+.contentInput input {
   width: 60%;
   height: 3rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .writerInput {
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-bottom: 1vh;
+  }
+
+  .writerInput input {
+    margin: auto 0;
+  }
+
+  .titleInput {
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-bottom: 1vh;
+  }
+
+  .titleInput input {
+    margin: auto 0;
+  }
+
+  .contentInput {
+    /* background-color: cornflowerblue; */
+    width: 70vw;
+    height: 8vh;
+    margin: 0 auto 0.6vh auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    display: flex;
+  }
+
+  .contentInput input {
+    width: 50vw;
+    height: 6vh;
+    margin: 0rem 0.5rem 0.5rem 0;
+  }
+
+  .button {
+    margin-bottom: 1vh;
+  }
 }

@@ -7,12 +7,17 @@
 body {
   font-family: "Open Sans", "Lato", sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
   text-align: center;
 }
 
 body input {
   margin: 0rem 0 1rem 0;
+}
+
+main {
+  height: 92vh;
+  overflow-y: scroll;
 }
 
 .line {
@@ -50,4 +55,40 @@ h6 {
 .conmments-intro {
   /* background-color: antiquewhite; */
   padding: 0rem 10%;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.mobile-line {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .comments-warning h3 {
+    /* background-color: aliceblue; */
+    padding: 0.3rem 10%;
+    margin: 0 auto;
+  }
+
+  .conmments-intro {
+    /* background-color: antiquewhite; */
+    padding: 0rem 10%;
+  }
+
+  .mobile-line {
+    display: block;
+    width: 80%;
+  }
 }

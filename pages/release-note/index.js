@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Release from "../../components/release/Release";
 import Card from "@/components/ui/Card";
+import Header from "@/components/ui/Header";
 
 export default function releaseNotePage() {
   return (
@@ -15,13 +16,16 @@ export default function releaseNotePage() {
         />
       </Head>
       <div>
+        <Header />
         <div className="title">
           <h2>개발자 노트</h2>
           <Link href="/" className="linkButton">
             계산기로 돌아가기
           </Link>
         </div>
+
         <br />
+        <h3 className="mobile-title">개발자 노트</h3>
         <hr className="line" />
         <br />
         <Card>

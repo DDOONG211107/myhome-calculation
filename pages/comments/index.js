@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { MongoClient } from "mongodb";
 import { Fragment } from "react";
 import Head from "next/head";
+import Header from "@/components/ui/Header";
 
 const DUMMY_COMMENTS = [
   {
@@ -60,12 +61,15 @@ export default function commentsPage(props) {
           content="놀러와 마이홈의 생단 효율을 계산할 수 있어요"
         />
       </Head>
+      <Header />
       <div className="title">
         <h2>자유롭게 소통하기</h2>
         <Link href="/" className="linkButton">
           계산기로 돌아가기
         </Link>
       </div>
+      <h3 className="mobile-title">소통 게시판 </h3>
+      <hr className="mobile-line" />
       <div className="comments-warning">
         <h3>
           절대 이곳에 개인정보 및 민감한 글을 작성하지 마세요.

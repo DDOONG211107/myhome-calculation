@@ -35,22 +35,30 @@ export default function NewCommentForm(props) {
 
   return (
     <form className={classes.newCommentForm} onSubmit={submitHandler}>
-      <label>작성자</label>
-      <input type="text" value={enteredWriter} onChange={changeWriterHandler} />
-      <br />
-      <label>제목</label>
-      <input type="text" value={enteredTitle} onChange={changeTitleHandler} />
-      <br />
-      <label>내용</label>
-      <input
-        className={classes.contentInput}
-        type="text"
-        value={enteredComment}
-        onChange={changeCommentHandler}
-        maxLength="500"
-        placeholder="최대 500자 가능"
-      />
-      <button>글 등록하기</button>
+      <div className={classes.writerInput}>
+        <label>작성자</label>
+        <input
+          type="text"
+          value={enteredWriter}
+          onChange={changeWriterHandler}
+        />
+      </div>
+      <div className={classes.titleInput}>
+        <label>제목</label>
+        <input type="text" value={enteredTitle} onChange={changeTitleHandler} />
+      </div>
+      <div className={classes.contentInput}>
+        <label>내용</label>
+        <input
+          type="text"
+          value={enteredComment}
+          onChange={changeCommentHandler}
+          maxLength="500"
+          placeholder="최대 500자 가능"
+        />
+      </div>
+
+      <button className={classes.button}>글 등록하기</button>
     </form>
   );
 }

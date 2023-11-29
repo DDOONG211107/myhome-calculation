@@ -1,0 +1,54 @@
+.header {
+  background-color: rgb(53, 67, 138);
+  padding: 1rem;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburgerIcon {
+    /* size: 6rem; */
+    display: inline;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    /* background-color: rebeccapurple; */
+  }
+
+  .drawer {
+    /* background-color: yellow; */
+  }
+
+  .drawerLists {
+    /* background-color: aliceblue; */
+    padding-inline-start: 0;
+    list-style: none;
+    margin-block: 0;
+  }
+
+  .drawerLists li {
+    background-color: rgb(53, 67, 138);
+    border-bottom: 1px solid;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .drawerLists a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+}
