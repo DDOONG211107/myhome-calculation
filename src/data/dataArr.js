@@ -80,7 +80,7 @@ const dataArr = [
     type: 2,
     name: "큰 오동나무 10",
     time: 210 * 60,
-    exp: 100,
+    exp: 32760,
     id: 1303,
   },
   {
@@ -122,7 +122,7 @@ const dataArr = [
     type: 3,
     name: "별님의 고무 6",
     time: 180 * 60,
-    exp: 100,
+    exp: 2106,
     id: 1308,
   },
   {
@@ -164,14 +164,14 @@ const dataArr = [
     type: 3,
     name: "별님의 체리 5",
     time: 600 * 60,
-    exp: 100,
+    exp: 8264,
     id: 1313,
   },
   {
     type: 3,
     name: "별나무",
     time: 24 * 60 * 60,
-    exp: 100,
+    exp: 60,
     id: 1800,
   },
 
@@ -285,7 +285,7 @@ const dataArr = [
     type: 5,
     name: "꿀",
     time: 30 * 60,
-    exp: 1,
+    exp: 76,
     id: 1401,
   },
   {
@@ -306,7 +306,7 @@ const dataArr = [
     type: 5,
     name: "누에고치",
     time: 480 * 60,
-    exp: 100,
+    exp: 6015,
     id: 1402,
   },
   {

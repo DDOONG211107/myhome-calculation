@@ -66,7 +66,14 @@ export function pickNumber(percent, even, three, five) {
   return arr;
 }
 
-function pushDataToResultArr(data, typeNum, calculatedTime, arr) {
+function pushDataToResultArr(
+  data,
+  typeNum,
+  calculatedTime,
+  calculatedExpVal,
+  arr
+) {
+  // console.log(calculatedExpVal);
   if (isPicked(data, typeNum)) {
     if (calculatedTime > 60 * 60) {
       arr.push({
@@ -119,6 +126,7 @@ function isPicked(data, typeNum) {
 // type: 1,2,3,4,5 (광산, 나무, 농사, 동물, 낚시)
 export function pickCondition(
   percent,
+  expPercent,
   isMine,
   isTree,
   isFruit,
@@ -126,11 +134,17 @@ export function pickCondition(
   isAnimal,
   isFish
 ) {
-  const arr = [];
+  const resultArr = [];
 
-  dataArr.map((data) => {
-    if (percent === 0) {
-      arr.push({
+  const calculatedExpVal = (+expPercent + 100) / 100;
+  const calculatedArr = dataArr.map((data) => {
+    return { ...data, exp: Math.floor(calculatedExpVal * data.exp) };
+  });
+
+  calculatedArr.map((data) => {
+    if (percent === -1) {
+      // console.log("-1에 들어옴");
+      resultArr.push({
         type: data.type,
         name: data.name,
         time: data.time,
@@ -140,33 +154,35 @@ export function pickCondition(
         isPossible: false,
         portion: impossibleString,
       });
+      return;
     }
     const calculatedTime = (data.time * percent) / 100;
+
     if (isMine) {
-      pushDataToResultArr(data, 1, calculatedTime, arr);
+      pushDataToResultArr(data, 1, calculatedTime, calculatedExpVal, resultArr);
     }
     if (isTree) {
-      console.log(data, calculatedTime);
-      pushDataToResultArr(data, 2, calculatedTime, arr);
+      // console.log(data, calculatedTime);
+      pushDataToResultArr(data, 2, calculatedTime, calculatedExpVal, resultArr);
     }
     if (isFruit) {
-      console.log(data, calculatedTime);
-      pushDataToResultArr(data, 3, calculatedTime, arr);
+      // console.log(data, calculatedTime);
+      pushDataToResultArr(data, 3, calculatedTime, calculatedExpVal, resultArr);
     }
     if (isFarm) {
-      pushDataToResultArr(data, 4, calculatedTime, arr);
+      pushDataToResultArr(data, 4, calculatedTime, calculatedExpVal, resultArr);
     }
 
     if (isAnimal) {
-      pushDataToResultArr(data, 5, calculatedTime, arr);
+      pushDataToResultArr(data, 5, calculatedTime, calculatedExpVal, resultArr);
     }
     if (isFish) {
-      pushDataToResultArr(data, 6, calculatedTime, arr);
+      pushDataToResultArr(data, 6, calculatedTime, calculatedExpVal, resultArr);
     }
 
     if (!isMine && !isTree && !isFruit && !isFarm && !isFish && !isAnimal) {
       if (calculatedTime > 60 * 60) {
-        arr.push({
+        resultArr.push({
           type: data.type,
           name: data.name,
           time: calculatedTime / 60,
@@ -178,7 +194,7 @@ export function pickCondition(
         });
       } else if (calculatedTime <= 60 * 60 && calculatedTime > 5 * 60) {
         //console.log(data);
-        arr.push({
+        resultArr.push({
           type: data.type,
           name: data.name,
           time: calculatedTime / 60,
@@ -190,7 +206,7 @@ export function pickCondition(
         });
         return;
       } else if (calculatedTime <= 5 * 60) {
-        arr.push({
+        resultArr.push({
           type: data.type,
           name: data.name,
           time: calculatedTime / 60,
@@ -206,5 +222,5 @@ export function pickCondition(
     }
   });
 
-  return arr;
+  return resultArr;
 }

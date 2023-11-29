@@ -1,9 +1,20 @@
 const releaseArr = [
   {
+    date: "23.11.29",
+    id: "r6",
+    title: "ux, ui 개선",
+    strArr: [
+      "모달창 구현 -> 체크 형식으로 생단셋 입력할 수 있도록 ux 개선",
+      "pc버전 계산기 input ui 개선",
+    ],
+    isCompleted: false,
+  },
+  {
     date: "23.11.28",
     id: "r5",
     title: "생산 경험치 계산 기능 추가",
     strArr: ["생단 퍼센트와 생산 경험치를 함께 계산할 수 있는 기능 구현"],
+    isCompleted: true,
   },
   {
     date: "23.11.28",

@@ -76,6 +76,27 @@ h6 {
     margin-bottom: 0.75rem;
   }
 
+  .reduceInputDiv {
+    /* background-color: antiquewhite; */
+    margin-top: 3vh;
+  }
+
+  .reduceInputDiv input {
+    width: 3rem;
+    margin: 0 0.2rem 0 0.75rem;
+  }
+
+  .expInputDiv {
+    /* background-color: cornflowerblue; */
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+  }
+
+  .expInputDiv input {
+    width: 3rem;
+    margin: 0 0.2rem 0 0.75rem;
+  }
+
   .comments-warning h3 {
     /* background-color: aliceblue; */
     padding: 0.3rem 10%;

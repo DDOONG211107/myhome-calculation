@@ -8,17 +8,31 @@ import Header from "@/components/ui/Header";
 export default function Home() {
   const [enteredPercent, setEnteredPercent] = useState("");
   const [calculatedPercent, setCalculatedPercent] = useState("");
-  let result = 0;
+  const [enteredExpPercent, setEnteredExpPercent] = useState("0");
+  const [calculatedExpPercent, setCalculatedExpPercent] = useState("0");
+  let reducPercent = 0;
   function clickHanlder() {
     console.log(" 버튼을 눌렀습니다");
+    console.log(enteredPercent, enteredExpPercent);
 
-    result = calculateHandler(enteredPercent);
+    reducPercent = calculateHandler(enteredPercent);
     //console.log(result);
-    setCalculatedPercent(result);
+    setCalculatedPercent(reducPercent);
+    if (enteredExpPercent >= 0 && enteredExpPercent <= 100) {
+      setCalculatedExpPercent(enteredExpPercent);
+      // console.log("생단:", calculatedPercent, "생경: ", calculatedExpPercent);
+    } else {
+      setCalculatedExpPercent(0);
+      // console.log("생단:", calculatedPercent, "생경: ", calculatedExpPercent);
+    }
   }
 
   function changeEnteredPercent(event) {
     setEnteredPercent(event.target.value);
+  }
+
+  function changeEnteredExpPercent(event) {
+    setEnteredExpPercent(event.target.value);
   }
 
   return (
@@ -43,8 +57,30 @@ export default function Home() {
         </div> */}
         {/* <button onclick={showCommentsPageHandler}>자유롭게 소통하기</button> */}
         {/* <h2>11.26.21:50</h2> */}
+        <div className="reduceInputDiv">
+          <label>
+            <b>생산단축</b> (모든 포션, 펫 포함)
+          </label>
+          <input
+            type="number"
+            value={enteredPercent}
+            onChange={changeEnteredPercent}
+          />
+          %
+        </div>
+        <div className="expInputDiv">
+          <label>
+            <b>생산경험치 증가</b> (모든 포션 포함)
+          </label>
+          <input
+            type="number"
+            value={enteredExpPercent}
+            onChange={changeEnteredExpPercent}
+          />
+          %
+        </div>
 
-        <h3>
+        {/* <h3>
           생산단축 퍼센트를 입력해주세요
           <br /> (모든 포션과 펫 포함)
         </h3>
@@ -52,10 +88,10 @@ export default function Home() {
           type="number"
           value={enteredPercent}
           onChange={changeEnteredPercent}
-        />
-        <hr className="line" />
+        /> */}
         <button onClick={clickHanlder}>계산하기</button>
-        <Result percent={calculatedPercent} />
+        {/* <hr className="line" /> */}
+        <Result percent={calculatedPercent} expPercent={calculatedExpPercent} />
       </main>
     </>
   );

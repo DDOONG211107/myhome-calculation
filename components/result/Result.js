@@ -10,6 +10,7 @@ import { ResultTable } from "./ResultTable";
 
 export function Result(props) {
   const percent = props.percent;
+  const expPercent = props.expPercent;
   // type: 1,2,3,4,5 (광산, 목재, 과일나무, 농사, 동물, 낚시)
   const [isMine, setIsMine] = useState(false);
   const [isTree, setIsTree] = useState(false);
@@ -35,9 +36,28 @@ export function Result(props) {
   useEffect(() => {
     // console.log(percent, isMine, isTree, isFarm, isFish, isAnimal);
     setResultArr(
-      pickCondition(percent, isMine, isTree, isFruit, isFarm, isAnimal, isFish)
+      pickCondition(
+        percent,
+        expPercent,
+        isMine,
+        isTree,
+        isFruit,
+        isFarm,
+        isAnimal,
+        isFish
+      )
     );
-  }, [percent, isMine, isTree, isFruit, isFarm, isFish, isAnimal, isFish]);
+  }, [
+    percent,
+    expPercent,
+    isMine,
+    isTree,
+    isFruit,
+    isFarm,
+    isFish,
+    isAnimal,
+    isFish,
+  ]);
 
   // dataArr.map((data) => {
   //   if (data < num) {
