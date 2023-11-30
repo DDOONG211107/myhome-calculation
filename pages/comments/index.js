@@ -68,27 +68,30 @@ export default function commentsPage(props) {
           계산기로 돌아가기
         </Link>
       </div> */}
-      <h3 className="mobile-title">소통 게시판 </h3>
-      <hr className="mobile-line" />
-      <div className="comments-warning">
-        <h3>
-          절대 이곳에 개인정보 및 민감한 글을 작성하지 마세요.
+      <main>
+        <h3 className="mobile-title">소통 게시판 </h3>
+        <hr className="mobile-line" />
+        <div className="comments-warning">
+          <h3>
+            절대 이곳에 개인정보 및 민감한 글을 작성하지 마세요.
+            <br />
+            관리자는 모든 글을 읽을 수 있습니다.
+          </h3>
+        </div>
+        <div className="conmments-intro">
+          최근 30개의 글만 보여집니다.
           <br />
-          관리자는 모든 글을 읽을 수 있습니다.
-        </h3>
-      </div>
-      <div className="conmments-intro">
-        최근 30개의 글만 보여집니다.
-        <br />
-        작성된 글은 약 30초 후 게시됩니다.
-        <br />
-        글이 보이지 않는다면 약 1분 후 새로고침 해주세요.
-      </div>
+          작성된 글은 약 30초 후 게시됩니다.
+          <br />
+          글이 보이지 않는다면 약 1분 후 새로고침 해주세요.
+        </div>
 
-      <Card>
-        <CommentsList comments={props.commentsArr} />
-        <NewCommentForm onAddComment={addCommentHandler} />
-      </Card>
+        <Card>
+          <CommentsList comments={props.commentsArr} />
+          <NewCommentForm onAddComment={addCommentHandler} />
+        </Card>
+      </main>
+      <footer className="footer">소통 게시판 footer</footer>
     </Fragment>
   );
 }

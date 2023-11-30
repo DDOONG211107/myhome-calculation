@@ -5,10 +5,12 @@
 
 .releaseList {
   text-align: left;
+
   /* background-color: cornflowerblue; */
 }
 
 .releaseList hr {
-  width: 95%;
+  width: 100%;
   margin-left: 0;
+  margin-right: 0;
 }

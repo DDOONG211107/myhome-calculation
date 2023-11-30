@@ -7,4 +7,6 @@
 .releaseLists {
   list-style: none;
   text-align: left;
+  padding-inline-start: 0;
+  padding: 1vh 1rem;
 }

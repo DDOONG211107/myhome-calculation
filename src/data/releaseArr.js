@@ -4,6 +4,7 @@ const releaseArr = [
     id: "r6",
     title: "ux, ui 개선",
     strArr: [
+      "footer에 이메일 추가",
       "모달창 구현 -> 체크 형식으로 생단셋 입력할 수 있도록 ux 개선",
       "pc버전 계산기 input ui 개선",
     ],

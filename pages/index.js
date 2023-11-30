@@ -4,6 +4,7 @@ import { Result } from "../components/result/Result";
 import Link from "next/link";
 import Head from "next/head";
 import Header from "@/components/ui/Header";
+import { ContactUs } from "@/components/ui/EmailLink";
 
 export default function Home() {
   const [enteredPercent, setEnteredPercent] = useState("");
@@ -91,8 +92,10 @@ export default function Home() {
         /> */}
         <button onClick={clickHanlder}>계산하기</button>
         {/* <hr className="line" /> */}
+
         <Result percent={calculatedPercent} expPercent={calculatedExpPercent} />
       </main>
+      <footer className="footer">계산기 footer</footer>
     </>
   );
 }

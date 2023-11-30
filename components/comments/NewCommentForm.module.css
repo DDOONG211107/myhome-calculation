@@ -16,6 +16,7 @@
 
   .writerInput input {
     margin: auto 0;
+    width: 8rem;
   }
 
   .titleInput {
@@ -29,6 +30,7 @@
 
   .titleInput input {
     margin: auto 0;
+    width: 8rem;
   }
 
   .contentInput {
