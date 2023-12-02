@@ -31,6 +31,7 @@
 .emailFormContent textarea {
   width: 20vw;
   height: 20vh;
+  resize: none;
 }
 
 @media (max-width: 768px) {
@@ -67,5 +68,6 @@
   .emailFormContent textarea {
     width: 60vw;
     height: 25vh;
+    resize: none;
   }
 }
