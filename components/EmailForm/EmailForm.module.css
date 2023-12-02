@@ -63,11 +63,13 @@
   .emailFormContent {
     text-align: left;
     font-weight: 600;
+    /* background-color: aqua; */
+    height: 10%;
   }
 
   .emailFormContent textarea {
     width: 60vw;
-    height: 25vh;
+
     resize: none;
   }
 }
