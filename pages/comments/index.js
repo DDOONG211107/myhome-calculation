@@ -7,6 +7,7 @@ import { MongoClient } from "mongodb";
 import { Fragment } from "react";
 import Head from "next/head";
 import Header from "@/components/ui/Header";
+import MyFooter from "@/components/ui/MyFooter";
 
 const DUMMY_COMMENTS = [
   {
@@ -91,7 +92,8 @@ export default function commentsPage(props) {
           <NewCommentForm onAddComment={addCommentHandler} />
         </Card>
       </main>
-      <footer className="footer">소통 게시판 footer</footer>
+      {/* <footer className="footer">소통 게시판 footer</footer> */}
+      <MyFooter>소통게시판 footer</MyFooter>
     </Fragment>
   );
 }

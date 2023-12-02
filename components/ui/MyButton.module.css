@@ -1,0 +1,7 @@
+.myButton {
+  /* background-color: aquamarine;
+  color: coral; */
+  cursor: pointer;
+  padding: auto 0;
+  display: inline-block;
+}

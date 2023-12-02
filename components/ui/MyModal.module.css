@@ -1,0 +1,128 @@
+.myOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(76, 76, 76, 0.7);
+  cursor: pointer;
+}
+
+.myModal {
+  position: absolute;
+  top: 15vh;
+  left: 35vw;
+  right: 35vw;
+  bottom: 25vh;
+  background-color: white;
+  cursor: default;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.myModalHeader {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  right: 0vw;
+  background-color: rgb(216, 233, 255);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.myModalHeaderTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-left: 1rem;
+}
+
+.myModalHeaderCloseBtn {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-right: 1rem;
+  height: 2rem;
+  /* background-color: aqua; */
+}
+
+.myModalMain {
+  position: absolute;
+  top: 5vh;
+  left: 0vw;
+  right: 0vw;
+  bottom: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 1rem 1.5rem;
+  /* background-color: coral; */
+}
+
+@media (max-width: 768px) {
+  .myOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(76, 76, 76, 0.7);
+  }
+
+  .myModal {
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 25vh;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .myModalHeader {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    right: 0vw;
+    background-color: rgb(216, 233, 255);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .myModalHeaderTitle {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-left: 1rem;
+  }
+
+  .myModalHeaderCloseBtn {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-right: 1rem;
+    height: 2rem;
+    /* background-color: aqua; */
+  }
+
+  .myModalMain {
+    position: absolute;
+    top: 5vh;
+    left: 0vw;
+    right: 0vw;
+    bottom: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 1rem 1.5rem;
+    /* overflow-y: scroll; */
+    /* background-color: coral; */
+  }
+}

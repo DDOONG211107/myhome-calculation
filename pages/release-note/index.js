@@ -4,6 +4,7 @@ import Release from "../../components/release/Release";
 import Card from "@/components/ui/Card";
 import Header from "@/components/ui/Header";
 import { Link } from "@react-email/components";
+import MyFooter from "@/components/ui/MyFooter";
 
 export default function releaseNotePage() {
   return (
@@ -33,7 +34,8 @@ export default function releaseNotePage() {
           <Release />
         </Card>
       </main>
-      <footer className="footer">으아아ㅏ</footer>
+      {/* <footer className="footer">으아아ㅏ</footer> */}
+      <MyFooter>개발자 노트 footer</MyFooter>
     </Fragment>
   );
 }

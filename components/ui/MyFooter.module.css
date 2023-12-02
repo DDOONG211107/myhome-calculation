@@ -1,0 +1,37 @@
+.footer {
+  background-color: rgb(53, 67, 138);
+  margin-bottom: 0;
+  height: 4vh;
+}
+
+.sendMailForm {
+  /* background-color: aquamarine; */
+  font-size: 1.7rem;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+  /* width: 3rem; */
+}
+
+.sendMailForm :hover {
+  color: rgb(216, 233, 255);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-color: rgb(53, 67, 138);
+    margin-bottom: 0;
+    height: 4vh;
+  }
+
+  .sendMailForm {
+    /* background-color: aquamarine; */
+    font-size: 1.7rem;
+    color: white;
+    margin: auto;
+  }
+
+  .sendMailForm:hover {
+    color: rgb(216, 233, 255);
+  }
+}

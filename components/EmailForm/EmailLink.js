@@ -26,7 +26,7 @@ export const ContactUs = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <label>이름</label>
+      <label>인게임 닉네임, 레벨</label>
       <input type="text" name="user_name" />
       <label>본인의 이메일 주소</label>
       <input type="email" name="user_email" />

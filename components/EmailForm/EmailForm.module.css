@@ -1,0 +1,71 @@
+.emailFormNameInput {
+  text-align: left;
+}
+
+.emailFormNameInput label {
+  font-weight: 600;
+}
+
+.emailFormNameInput input {
+  height: 1.8rem;
+}
+
+.emailFormAddressInput {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.emailFormAddressInput label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.emailFormAddressInput input {
+  height: 1.8rem;
+}
+
+.emailFormContent {
+  text-align: left;
+  font-weight: 600;
+}
+
+.emailFormContent textarea {
+  width: 20vw;
+  height: 20vh;
+}
+
+@media (max-width: 768px) {
+  .emailFormNameInput {
+    text-align: left;
+  }
+
+  .emailFormNameInput label {
+    font-weight: 600;
+  }
+
+  .emailFormNameInput input {
+    height: 1.8rem;
+  }
+
+  .emailFormAddressInput {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .emailFormAddressInput label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .emailFormAddressInput input {
+    height: 1.8rem;
+  }
+
+  .emailFormContent {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .emailFormContent textarea {
+    width: 60vw;
+    height: 25vh;
+  }
+}
