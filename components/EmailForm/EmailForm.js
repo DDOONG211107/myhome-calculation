@@ -51,7 +51,7 @@ export default function EmailForm(props) {
           <div className={classes.emailFormContent}>
             <label>피드백 내용</label>
             <br />
-            <textarea name="message" autoFocus={true} />
+            <textarea name="message" />
             <br />
             <input type="submit" value="보내기" />
           </div>

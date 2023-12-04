@@ -79,8 +79,8 @@
     right: 2rem;
     /* width: 80vw; */
     /* bottom: 260px; */
-    height: 600px;
-    overflow-y: scroll;
+    height: auto;
+    /* overflow-y: scroll; */
     /* right: 10vw;
     bottom: 25vh; */
     background-color: rgb(255, 255, 255);
@@ -127,7 +127,7 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     padding: 1rem 1.5rem;
-    overflow-y: auto;
+    overflow-y: scroll;
     /* background-color: coral; */
   }
 }
