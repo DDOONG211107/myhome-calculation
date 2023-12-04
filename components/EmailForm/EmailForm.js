@@ -9,7 +9,7 @@ export default function EmailForm(props) {
   const [submitEmailError, setSubmitEmailError] = useState(false);
 
   const sendEmail = (e) => {
-    //e.preventDefault();
+    e.preventDefault();
 
     console.log("이메일 요청");
     emailjs
