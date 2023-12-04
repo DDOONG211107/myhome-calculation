@@ -79,7 +79,7 @@
     right: 2rem;
     /* width: 80vw; */
     bottom: 16rem;
-
+    overflow-y: scroll;
     /* right: 10vw;
     bottom: 25vh; */
     background-color: white;

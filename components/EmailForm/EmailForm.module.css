@@ -64,12 +64,12 @@
     text-align: left;
     font-weight: 600;
     /* background-color: aqua; */
-    height: 10%;
+    /* height: 30%; */
   }
 
   .emailFormContent textarea {
     width: 60vw;
-
+    height: 10rem;
     resize: none;
   }
 }
