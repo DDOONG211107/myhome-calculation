@@ -47,7 +47,7 @@ export default function EmailForm(props) {
             <br />
             주소를 입력하지 않으면 피드백 답장을 받을 수 없어요!
             <br />
-            <input type="email" name="user_email" />
+            <input type="text" name="user_email" />
           </div>
           <div className={classes.emailFormContent}>
             <label>피드백 내용</label>
