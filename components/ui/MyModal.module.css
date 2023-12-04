@@ -74,10 +74,11 @@
 
   .myModal {
     position: absolute;
-    top: 15vh;
-    left: 10vw;
-    width: 80vw;
-    bottom: 25vh;
+    top: 7rem;
+    left: 2rem;
+    right: 2rem;
+    /* width: 80vw; */
+    bottom: 16rem;
 
     /* right: 10vw;
     bottom: 25vh; */
@@ -88,13 +89,13 @@
 
   .myModalHeader {
     position: absolute;
-    top: 0vh;
-    left: 0vw;
-    right: 0vw;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgb(216, 233, 255);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    height: 5vh;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,7 +119,7 @@
 
   .myModalMain {
     position: absolute;
-    top: 5vh;
+    top: 3rem;
     left: 0vw;
     right: 0vw;
     bottom: 0;
