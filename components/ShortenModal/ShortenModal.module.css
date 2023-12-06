@@ -74,13 +74,14 @@
 
   .shortenCheck {
     background-color: rgb(222, 233, 255);
+    /* margin-top: 2rem; */
     display: flex;
   }
 
   .accShorten {
     width: 50%;
     background-color: rgb(222, 248, 255);
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
   }
 
   .otherShorten {
