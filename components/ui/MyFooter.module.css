@@ -1,14 +1,15 @@
 .footer {
   background-color: rgb(53, 67, 138);
   margin-bottom: 0;
-  height: 4vh;
+  height: 6vh;
 }
 
 .sendMailForm {
   /* background-color: aquamarine; */
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+
   color: white;
-  margin: auto;
+  /* margin: auto; */
   cursor: pointer;
   /* width: 3rem; */
 }

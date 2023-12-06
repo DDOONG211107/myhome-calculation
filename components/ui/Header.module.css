@@ -1,7 +1,7 @@
 .header {
   background-color: rgb(53, 67, 138);
   padding: 1rem;
-  height: 7vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,6 +59,14 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    background-color: rgb(53, 67, 138);
+    padding: 1rem;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .navigation {
     display: none;
   }

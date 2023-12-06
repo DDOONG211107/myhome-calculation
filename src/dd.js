@@ -1,29 +1,4 @@
-if (isTree) {
-  if (isPicked(data, 2)) {
-    if (calculatedTime <= 60 * 60 && calculatedTime > 5 * 60) {
-      //console.log(data);
-      arr.push({
-        type: 2,
-        name: data.name,
-        time: calculatedTime / 60,
-        exp: data.exp,
-        id: data.id,
-        bonus: data.bonus,
-        portion: middleAmple,
-      });
-      return;
-    } else if (calculatedTime <= 5 * 60) {
-      arr.push({
-        type: 2,
-        name: data.name,
-        time: calculatedTime / 60,
-        exp: data.exp,
-        id: data.id,
-        bonus: data.bonus,
-        portion: lowAmple,
-      });
-      return;
-    }
-    return;
-  }
-}
+const loremStr =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum";
+
+//sfkjsfkk

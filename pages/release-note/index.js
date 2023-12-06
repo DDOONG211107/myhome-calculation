@@ -26,10 +26,9 @@ export default function releaseNotePage() {
         </div> */}
       <main>
         <h3 className="pcTitle">개발자 노트</h3>
-        <br />
+
         <h3 className="mobile-title">개발자 노트</h3>
 
-        <br />
         <Card>
           <Release />
         </Card>

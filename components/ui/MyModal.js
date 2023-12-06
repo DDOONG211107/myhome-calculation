@@ -4,7 +4,7 @@ import MyButton from "./MyButton";
 import { IoMdClose } from "react-icons/io";
 
 export default function MyModal(props) {
-  console.log("모달창 활성화");
+  //console.log("모달창 활성화");
   return (
     <ReactModal
       shouldCloseOnOverlayClick={true}

@@ -16,8 +16,8 @@ body input {
 }
 
 main {
-  height: 89vh;
-  overflow-y: scroll;
+  height: 84vh;
+  overflow-y: auto;
 }
 
 .line {
@@ -37,7 +37,20 @@ main {
 }
 
 .linkButton {
-  margin: 0 1rem;
+  background-color: rgb(216, 233, 255);
+  display: inline-block;
+  margin: 1rem;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  background-color: rgb(167, 205, 255);
 }
 
 h1,
@@ -65,10 +78,20 @@ h6 {
   display: none;
 }
 
+.reduceInputDiv input {
+  width: 3rem;
+  margin: 0 0.2rem 0.5rem 1rem;
+}
+
+.expInputDiv input {
+  width: 3rem;
+  margin: 0 0.2rem 0.5rem 1rem;
+}
+
 .footer {
   background-color: rgb(53, 67, 138);
   margin-bottom: 0;
-  height: 4vh;
+  height: 5vh;
 }
 
 @media (max-width: 768px) {
@@ -76,10 +99,15 @@ h6 {
     display: none;
   }
 
+  main {
+    height: 84vh;
+    overflow-y: auto;
+  }
+
   .mobile-title {
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .pcTitle {
@@ -88,6 +116,18 @@ h6 {
 
   .line {
     display: none;
+  }
+
+  .linkButton {
+    background-color: rgb(167, 205, 255);
+    display: inline-block;
+    margin-top: 1rem;
+    height: auto;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
   }
 
   .reduceInputDiv {
@@ -130,6 +170,6 @@ h6 {
   .footer {
     background-color: rgb(53, 67, 138);
     margin-bottom: 0;
-    height: 4vh;
+    height: 5vh;
   }
 }

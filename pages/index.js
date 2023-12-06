@@ -6,13 +6,26 @@ import Head from "next/head";
 import Header from "@/components/ui/Header";
 import { ContactUs } from "@/components/EmailForm/EmailLink";
 import MyFooter from "@/components/ui/MyFooter";
+import MyModal from "@/components/ui/MyModal";
+import ShortenModal from "@/components/ShortenModal/ShortenModal";
 
 export default function Home() {
-  const [enteredPercent, setEnteredPercent] = useState("");
-  const [calculatedPercent, setCalculatedPercent] = useState("");
+  const [enteredPercent, setEnteredPercent] = useState("0");
+  const [calculatedPercent, setCalculatedPercent] = useState("0");
   const [enteredExpPercent, setEnteredExpPercent] = useState("0");
   const [calculatedExpPercent, setCalculatedExpPercent] = useState("0");
+  const [showShortenModal, setShowShortenModal] = useState(false);
+  const [appliedShorten, setAppliedShorten] = useState("0");
   let reducPercent = 0;
+
+  const clickShortenModalHandler = () => {
+    setShowShortenModal(!showShortenModal);
+  };
+
+  const closeShortenModalHandler = () => {
+    setShowShortenModal(false);
+  };
+
   function clickHanlder() {
     console.log(" 버튼을 눌렀습니다");
     console.log(enteredPercent, enteredExpPercent);
@@ -37,6 +50,11 @@ export default function Home() {
     setEnteredExpPercent(event.target.value);
   }
 
+  useEffect(() => {
+    setAppliedShorten(enteredPercent);
+    console.log(enteredPercent);
+  }, [showShortenModal]);
+
   return (
     <>
       <Head>
@@ -59,6 +77,21 @@ export default function Home() {
         </div> */}
         {/* <button onclick={showCommentsPageHandler}>자유롭게 소통하기</button> */}
         {/* <h2>11.26.21:50</h2> */}
+        <div onClick={clickShortenModalHandler} className="linkButton">
+          생단셋 적용하기
+        </div>
+
+        <MyModal
+          onClose={closeShortenModalHandler}
+          isOpen={showShortenModal}
+          onClick={clickShortenModalHandler}
+          modalHeaderTitle={"생단셋 적용"}
+        >
+          <ShortenModal
+            onClose={closeShortenModalHandler}
+            onApply={setEnteredPercent}
+          />
+        </MyModal>
         <div className="reduceInputDiv">
           <label>
             <b>생산단축</b> (모든 포션, 펫 포함)

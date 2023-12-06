@@ -1,5 +1,15 @@
 const releaseArr = [
   {
+    date: "23.12.06",
+    id: "r7",
+    title: "회원가입 및 로그인 기능 추가",
+    strArr: [
+      "회원가입 및 로그인 기능 구현",
+      "회원별 세팅 저장 기능 구현",
+      "회원별 세팅 기록 DB에 저장",
+    ],
+  },
+  {
     date: "23.12.02",
     id: "r7",
     title: "ux, ui 개선",
@@ -7,7 +17,7 @@ const releaseArr = [
       "생단 계산기에 체크 형식으로 생단셋 입력할 수 있도록 ux 개선",
       "pc버전 계산기 input ui 개선",
     ],
-    isCompleted: false,
+    isCompleted: true,
   },
   {
     date: "23.11.29",
