@@ -68,25 +68,31 @@
 }
 
 @media (max-width: 768px) {
-  .shortenModalMain {
-    /* background-color: aqua; */
+  .shortenModalBackground {
+    /* background-color: antiquewhite; */
+    /* background-color: rgb(222, 233, 255); */
+    background-color: white;
+    border-radius: 0;
+    border-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   .shortenCheck {
-    background-color: rgb(222, 233, 255);
+    /* background-color: rgb(222, 233, 255); */
     /* margin-top: 2rem; */
+    border-bottom-right-radius: 0;
     display: flex;
   }
 
   .accShorten {
     width: 50%;
-    background-color: rgb(222, 248, 255);
-    padding: 2.5rem 0;
+    background-color: rgb(222, 233, 255);
+    border-bottom-left-radius: 0;
+    /* padding: 2rem 0; */
   }
 
   .otherShorten {
     width: 50%;
-
     margin: auto 0;
   }
 
@@ -95,8 +101,11 @@
   }
 
   .shortenResult {
-    /* background-color: greenyellow; */
-    padding: 1rem 0;
+    background-color: rgb(222, 233, 255);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    /* margin-bottom: 1rem; */
+    padding: 0;
   }
 
   .buttonDiv {
