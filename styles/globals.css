@@ -100,7 +100,7 @@ h6 {
   }
 
   main {
-    height: 84vh;
+    height: 86vh;
     overflow-y: auto;
   }
 
@@ -121,7 +121,7 @@ h6 {
   .linkButton {
     background-color: rgb(167, 205, 255);
     display: inline-block;
-    margin-top: 1rem;
+    margin: 2rem auto 0 auto;
     height: auto;
     width: auto;
     padding: 0.5rem;

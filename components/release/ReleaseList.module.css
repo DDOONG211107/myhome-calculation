@@ -9,6 +9,23 @@
   /* background-color: cornflowerblue; */
 }
 
+.releaseListDate {
+  background-color: antiquewhite;
+}
+/* .releaseList li {
+  background-color: antiquewhite;
+} */
+
+.completedList {
+  background-color: rgb(183, 238, 182);
+  display: block;
+}
+
+.incompletedList {
+  background-color: rgb(255, 224, 177);
+  display: block;
+}
+
 .releaseList hr {
   width: 100%;
   margin-left: 0;

@@ -8,7 +8,7 @@ export function ResultTable(props) {
     <Fragment>
       <MyList
         name="아이템 이름"
-        time="|필요 시간 (분)"
+        time="|남은 시간 (분)"
         portion="|필요 포션"
         experience="|획득 경험치"
       />

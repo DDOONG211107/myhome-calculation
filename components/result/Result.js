@@ -72,7 +72,7 @@ export function Result(props) {
 
   return (
     <Card>
-      <p>결과</p>
+      <p className={classes.resultTitle}>결과</p>
       <p className={classes.checks}>
         <MyCheckBox value={isMine} setFunc={setIsMine} />
         <label>광산 채굴</label>
@@ -80,6 +80,7 @@ export function Result(props) {
         <label>목재</label>
         <MyCheckBox value={isFruit} setFunc={setIsFruit} />
         <label>과일나무</label>
+        <br />
         <MyCheckBox value={isFarm} setFunc={setIsFarm} />
         <label>밭</label>
         <MyCheckBox value={isAnimal} setFunc={setIsAnimal} />

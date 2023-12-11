@@ -8,7 +8,13 @@ export default function ReleaseList(props) {
 
   return (
     <li key={releaseObj.id} className={classes.releaseList}>
-      <label className={classes.releaseListDate}>
+      <label
+        className={
+          releaseObj.isCompleted
+            ? classes.completedList
+            : classes.incompletedList
+        }
+      >
         <b>{releaseObj.date}</b>
         {releaseObj.isCompleted ? <b>{` - 완료`}</b> : <b>{` - 진행중`}</b>}
       </label>
@@ -16,7 +22,7 @@ export default function ReleaseList(props) {
       {desArr.map((str) => {
         return <p>{str}</p>;
       })}
-      <hr className={classes.releaseListHr} />
+      {/* <hr className={classes.releaseListHr} /> */}
     </li>
   );
 }

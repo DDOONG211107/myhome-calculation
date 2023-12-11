@@ -9,3 +9,21 @@
   padding: 0;
   text-align: left;
 } */
+
+@media (max-width: 768px) {
+  .resultTitle {
+    padding-top: 1rem;
+    font-weight: 600;
+    /* background-color: antiquewhite; */
+  }
+
+  .checks {
+    /* background-color: antiquewhite; */
+    padding: 0.2rem 1rem;
+  }
+
+  .checks label {
+    /* background-color: rgb(55, 55, 201); */
+    margin: 0 1rem 0 0.2rem;
+  }
+}

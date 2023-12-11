@@ -1,7 +1,7 @@
 import dataArr from "./data/dataArr";
 
-const middleAmple = "중급 앰플 필요";
-const lowAmple = "하급 앰플 필요";
+const middleAmple = "1시간 앰플 필요";
+const lowAmple = "5분 앰플 필요";
 const impossibleString = "현재 불가능";
 
 export function clickHanlder() {

@@ -8,7 +8,8 @@
 
 .possibleItemLabels {
   text-align: left;
-  background-color: rgb(167, 205, 255);
+  /* background-color: rgb(167, 205, 255); */
+  background-color: rgb(183, 238, 182);
   margin: 0rem 10%;
   height: 1.8rem;
   padding: 0 1rem 0 0;
@@ -17,6 +18,7 @@
 .impossibleItemlabels {
   text-align: left;
   /* background-color: rgb(221, 221, 221); */
+  background-color: rgb(255, 208, 208);
   margin: 0.2rem 10%;
   padding: 0 1rem 0 0;
 }
@@ -26,6 +28,7 @@
   /* background-color: aquamarine; */
   display: inline-block;
   width: 11rem;
+  /* font-weight: 500; */
   /* padding-left: 0.5rem; */
 }
 
@@ -46,9 +49,17 @@
 }
 
 @media (max-width: 768px) {
+  .labels {
+    text-align: left;
+    background-color: rgb(53, 67, 138);
+    /* background-color: rgb(167, 205, 255); */
+    color: rgb(255, 252, 252);
+    margin: 0 10%;
+    padding: 0.5rem;
+  }
   .possibleItemLabels {
     text-align: left;
-    background-color: rgb(167, 205, 255);
+    background-color: rgb(183, 238, 182);
     margin: 0rem 10%;
     padding: 0.2rem 1rem 0 0.3rem;
     display: block;
@@ -58,13 +69,14 @@
 
   .impossibleItemlabels {
     text-align: left;
-    /* background-color: rgb(255, 243, 243); */
-    margin: 0.2rem 10%;
+    background-color: rgb(255, 208, 208);
+    margin: 0rem 10%;
     padding: 0.2rem 1rem 0 0.3rem;
     display: block;
     border-bottom: 1px solid #0d1014;
   }
   .firstLabel {
+    font-weight: 700;
     margin: 0 0% 0 0;
     /* background-color: aquamarine; */
     display: block;
