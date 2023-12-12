@@ -22,6 +22,9 @@ export default function Header() {
   const clickReleaseHandler = () => {
     router.push("/release-note");
   };
+  const clickLevelupCalHandler = () => {
+    router.push("/levelup-cal");
+  };
 
   return (
     <header className={classes.header}>
@@ -45,6 +48,9 @@ export default function Header() {
             <ol className={classes.drawerLists}>
               <li onClick={clickCalculHandler}>
                 <Link href="/">마이홈 생단 계산기</Link>
+              </li>
+              <li onClick={clickLevelupCalHandler}>
+                <Link href="/levelup-cal">레벨업 계산기</Link>
               </li>
               <li onClick={clickCommentsHandler}>
                 <Link href="/comments">마이홈 소통 게시판</Link>
