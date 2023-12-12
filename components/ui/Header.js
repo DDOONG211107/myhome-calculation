@@ -65,6 +65,9 @@ export default function Header() {
       <nav className={classes.navigation}>
         <ol>
           <li>
+            <Link href="/levelup-cal">레벨업 계산기</Link>
+          </li>
+          <li>
             <Link href="/comments">소통 게시판</Link>
           </li>
           <li>

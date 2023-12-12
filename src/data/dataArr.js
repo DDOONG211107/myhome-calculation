@@ -19,6 +19,8 @@ const dataArr = [
     time: 90 * 60,
     exp: 734,
     bonus: "자수정",
+    gold: 1510,
+    quantity: 10,
     id: 1503,
   },
   {
@@ -66,6 +68,8 @@ const dataArr = [
     name: "백금 원석 3",
     time: 450 * 60,
     exp: 8413,
+    gold: 2709,
+    quantity: 3,
     bonus: "철, 소금, 석회석",
     id: 1509,
   },
@@ -74,6 +78,8 @@ const dataArr = [
     name: "큰 호두나무 10",
     time: 480 * 60,
     exp: 65340,
+    gold: 14370,
+    quantity: 10,
     id: 1304,
   },
   {

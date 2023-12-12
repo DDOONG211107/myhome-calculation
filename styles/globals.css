@@ -130,6 +130,48 @@ h6 {
     align-items: center;
   }
 
+  .linkButton2 {
+    background-color: rgb(167, 205, 255);
+    display: inline-block;
+    margin: 1rem auto 0 auto;
+    height: auto;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+  }
+
+  .levelupCalDiv {
+    /* background-color: antiquewhite; */
+    /* margin: 2rem 2rem 0 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem 1rem 1rem; */
+  }
+  .levelupCalDiv p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
+
+  .levelupCalDiv input {
+    width: 2rem;
+  }
+
+  .portionChecks input {
+    width: auto;
+  }
+  .portionChecks label {
+    margin: 0 1rem 0 0.2rem;
+  }
+
+  .goalLevel {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .goalLevel input {
+    margin: 0;
+  }
   .reduceInputDiv {
     /* background-color: antiquewhite; */
     margin-top: 3vh;
@@ -150,7 +192,9 @@ h6 {
     width: 3rem;
     margin: 0 0.2rem 0 0.75rem;
   }
-
+  .levelupCalDiv .expInput {
+    width: 8rem;
+  }
   .comments-warning h3 {
     /* background-color: aliceblue; */
     padding: 0.3rem 10%;

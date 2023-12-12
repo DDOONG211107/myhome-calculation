@@ -1,8 +1,33 @@
 import dataArr from "./data/dataArr";
+import levelExpArr from "./data/levelExpArr";
 
 const middleAmple = "1시간 앰플 필요";
 const lowAmple = "5분 앰플 필요";
 const impossibleString = "현재 불가능";
+
+const itemArr = [
+  {
+    name: "호두 목재",
+    exp: 65340,
+    gold: 14370,
+    quantity: 10,
+    id: 1304,
+  },
+  {
+    name: "백금 원석",
+    exp: 8413,
+    gold: 2709,
+    quantity: 3,
+    id: 1509,
+  },
+  {
+    name: "철",
+    exp: 734,
+    gold: 1510,
+    quantity: 10,
+    id: 1503,
+  },
+];
 
 export function clickHanlder() {
   console.log("src폴더에 있는 calcultate에서 버튼을 눌렀습니다");
@@ -223,4 +248,44 @@ export function pickCondition(
   });
 
   return resultArr;
+}
+
+export function calculateLevelup(
+  enteredCurrentLevel,
+  enteredCurrentExp,
+  totalExpPercent,
+  enteredGoalLevel
+) {
+  let i = 0;
+  let requiredExp = 0;
+  const expItemArr = [];
+  for (i = enteredCurrentLevel; i < enteredGoalLevel; i++) {
+    requiredExp += levelExpArr[i];
+  }
+  requiredExp -= enteredCurrentExp;
+  // 이제 requiredExp를 호두, 백금, 철의 경험치만큼 나눠야 함
+
+  // const getExp0 = (itemArr[0].exp * (100 + totalExpPercent)) / 100;
+  // const reqAmp0 = Math.ceil(requiredExp / getExp0);
+  // const reqGold0 = reqAmp0 * itemArr[0].gold;
+  // const getItem0 = reqAmp0 * itemArr[0].quantity;
+
+  for (i = 0; i < 3; i++) {
+    const getExp = Math.floor((itemArr[i].exp * (100 + totalExpPercent)) / 100);
+    const reqAmple = Math.ceil(requiredExp / getExp);
+    const reqGold = reqAmple * itemArr[i].gold;
+    const getItem = reqAmple * itemArr[i].quantity;
+    console.log(requiredExp, getExp, reqAmple, reqGold, getItem);
+    expItemArr.push({
+      name: itemArr[i].name,
+      exp: getExp,
+      reqAmple: reqAmple,
+      gold: reqGold,
+      getItem: getItem,
+      totalExp: requiredExp,
+      id: itemArr[i].id,
+    });
+  }
+
+  return expItemArr;
 }

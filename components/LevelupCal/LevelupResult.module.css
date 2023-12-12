@@ -1,0 +1,18 @@
+.levelupResult ul {
+  list-style: none;
+  text-align: left;
+  padding: 1rem;
+}
+
+.levelupResult div {
+  display: inline-block;
+}
+
+.levelupResultLabel ul {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  width: 8rem;
+  text-align: left;
+  /* background-color: antiquewhite; */
+}
