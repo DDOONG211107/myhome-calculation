@@ -124,7 +124,10 @@ export default function Home() {
           value={enteredPercent}
           onChange={changeEnteredPercent}
         /> */}
-        <button onClick={clickHanlder}>계산하기</button>
+        <div onClick={clickHanlder} className="linkButton2">
+          계산하기
+        </div>
+        {/* <button onClick={clickHanlder}>계산하기</button> */}
         {/* <hr className="line" /> */}
 
         <Result percent={calculatedPercent} expPercent={calculatedExpPercent} />

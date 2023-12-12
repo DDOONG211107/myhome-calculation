@@ -20,6 +20,7 @@ export default function LevelupCal(props) {
   const [totalExpPercent, setTotalExpPercent] = useState(0);
   const [pickedItem, setPickedItem] = useState("");
   const [resultItemArr, setResultItemArr] = useState([]);
+  const [clicked, setClicked] = useState(false);
 
   const itemArr = [
     {
@@ -91,7 +92,25 @@ export default function LevelupCal(props) {
         enteredGoalLevel
       )
     );
+    // setClicked(!clicked);
+    // console.log(clicked);
   }
+
+  //   useEffect(() => {
+  //     console.log(enteredCurrentLevel);
+  //     console.log(enteredExpPercent);
+  //     console.log(enteredCurrentExp);
+  //     console.log(totalExpPercent);
+  //     setResultItemArr(
+  //       calculateLevelup(
+  //         enteredCurrentLevel,
+  //         enteredCurrentExp,
+  //         totalExpPercent,
+  //         enteredGoalLevel
+  //       )
+  //     );
+  //   }, [clicked]);
+
   return (
     <Fragment>
       <Head>

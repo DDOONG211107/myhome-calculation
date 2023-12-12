@@ -142,6 +142,15 @@ h6 {
     align-items: center;
   }
 
+  .linkButton:active {
+    background-color: rgb(134, 186, 255);
+    transform: scale(0.9);
+  }
+  .linkButton2:active {
+    background-color: rgb(134, 186, 255);
+    transform: scale(0.9);
+  }
+
   .levelupCalDiv {
     /* background-color: antiquewhite; */
     /* margin: 2rem 2rem 0 2rem;
@@ -185,7 +194,7 @@ h6 {
   .expInputDiv {
     /* background-color: cornflowerblue; */
     margin-top: 1vh;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
   }
 
   .expInputDiv input {

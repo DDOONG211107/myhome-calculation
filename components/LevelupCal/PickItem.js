@@ -11,6 +11,7 @@ export default function PickItem(props) {
           onChange={props.onChange}
           name={props.name}
           value="1304"
+          // checked={true}
         />
         호두 &nbsp;
       </label>
