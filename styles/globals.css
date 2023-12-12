@@ -53,6 +53,24 @@ main {
   background-color: rgb(167, 205, 255);
 }
 
+.linkButton2 {
+  background-color: rgb(167, 205, 255);
+  display: inline-block;
+  margin: 1rem auto 0 auto;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkButton2:hover {
+  background-color: rgb(134, 186, 255);
+  transform: scale(0.9);
+}
+
 h1,
 h2,
 h5,
@@ -68,6 +86,11 @@ h6 {
 .conmments-intro {
   /* background-color: antiquewhite; */
   padding: 0rem 10%;
+}
+
+.levelupNotice {
+  text-align: left;
+  padding: 1rem;
 }
 
 .mobile-title {
@@ -153,6 +176,8 @@ h6 {
 
   .levelupCalDiv {
     /* background-color: antiquewhite; */
+    text-align: left;
+    padding-left: 2.5rem;
     /* margin: 2rem 2rem 0 2rem;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -166,7 +191,10 @@ h6 {
   .levelupCalDiv input {
     width: 2rem;
   }
-
+  .levelupNotice {
+    text-align: left;
+    padding: 1rem;
+  }
   .portionChecks input {
     width: auto;
   }

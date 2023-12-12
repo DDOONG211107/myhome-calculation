@@ -10,6 +10,16 @@ const releaseArr = [
   //   ],
   // },
   {
+    date: "23.12.13",
+    id: "r10",
+    title: "ui 및 레벨업 계산기 개선",
+    strArr: [
+      "pc와 모바일버전 ui 정렬 및 개선",
+      "레벨업 계산기에 생산물 추가 기재 고려",
+    ],
+    isCompleted: false,
+  },
+  {
     date: "23.12.11",
     id: "r9",
     title: "레벨업 계산기 추가",
@@ -17,7 +27,7 @@ const releaseArr = [
       "특정 레벨을 목표로 하는 경험치 계산기",
       "필요한 앰플과 골드 기재",
     ],
-    isCompleted: false,
+    isCompleted: true,
   },
   {
     date: "23.12.07",
