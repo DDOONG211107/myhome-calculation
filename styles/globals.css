@@ -170,9 +170,20 @@ h6 {
     /* transform: scale(0.9); */
     transform: translate(4px);
   }
-  .linkButton2:active {
-    background-color: rgb(134, 186, 255);
-    transform: translate(4px);
+  .linkButton2:hover,
+  .linkButton2:focus {
+    animation: phoneButtonEffect 0.2s linear;
+  }
+
+  @keyframes phoneButtonEffect {
+    20% {
+      background-color: rgb(134, 186, 255);
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: rgb(167, 205, 255);
+      transform: scale(1);
+    }
   }
 
   .levelupCalDiv {

@@ -35,6 +35,16 @@ export default function PickItem(props) {
         />
         금 &nbsp;
       </label>
+      <br />
+      <label>
+        <input
+          type="radio"
+          onChange={props.onChange}
+          name={props.name}
+          value="1505"
+        />
+        석회석 &nbsp;
+      </label>
       <label>
         <input
           type="radio"

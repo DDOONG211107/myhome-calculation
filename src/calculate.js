@@ -28,6 +28,13 @@ const itemArr = [
     id: 1507,
   },
   {
+    name: "석회석",
+    exp: 2489,
+    gold: 2320,
+    quantity: 5,
+    id: 1505,
+  },
+  {
     name: "철",
     exp: 734,
     gold: 1510,
@@ -277,7 +284,7 @@ export function calculateLevelup(
   // const reqGold0 = reqAmp0 * itemArr[0].gold;
   // const getItem0 = reqAmp0 * itemArr[0].quantity;
 
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < 5; i++) {
     const getExp = Math.floor((itemArr[i].exp * (100 + totalExpPercent)) / 100);
     const reqAmple = Math.ceil(requiredExp / getExp);
     const reqGold = reqAmple * itemArr[i].gold;
