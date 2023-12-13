@@ -167,11 +167,12 @@ h6 {
 
   .linkButton:active {
     background-color: rgb(134, 186, 255);
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
+    transform: translate(4px);
   }
   .linkButton2:active {
     background-color: rgb(134, 186, 255);
-    transform: scale(0.9);
+    transform: translate(4px);
   }
 
   .levelupCalDiv {
