@@ -76,7 +76,7 @@ const dataArr = [
   {
     type: 2,
     name: "큰 호두나무 10",
-    time: 480 * 60,
+    time: 360 * 60,
     exp: 65340,
     gold: 14370,
     quantity: 10,
