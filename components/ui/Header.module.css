@@ -101,7 +101,7 @@
   .drawerLists a {
     text-decoration: none;
     font-weight: 700;
-    /* font-size: 16px; */
+    font-size: 1.2rem;
     color: white;
   }
 }
