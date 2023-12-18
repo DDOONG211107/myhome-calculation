@@ -15,11 +15,26 @@ const releaseArr = [
   //   '레벨업 '
   // ],
   {
+    date: "23.12.18",
+    id: "r12",
+    title: "ui 및 ux 개선",
+    strArr: [
+      "pc와 모바일버전 ui 정렬 및 개선",
+      "시간 단위 개선",
+      "레벨업 계산기에 생산물 추가 기재 고려",
+    ],
+    isCompleted: false,
+  },
+  {
     date: "23.12.16",
     id: "r11",
     title: "ui 및 레벨업 계산기 개선",
-    strArr: ["레벨별 필요 경험치 표 생성"],
-    isCompleted: false,
+    strArr: [
+      "레벨별 필요 경험치 표 생성",
+      "1시간 앰플과 5분 앰플 색깔 구분",
+      "나눔고딕 글꼴 적용",
+    ],
+    isCompleted: true,
   },
   {
     date: "23.12.16",

@@ -28,6 +28,9 @@ export default function Header() {
   const clickLevelupCalNoticeHandler = () => {
     router.push("/levelup-cal/notice");
   };
+  const clickLevelupCalTableHandler = () => {
+    router.push("/levelup-cal/levelupTable");
+  };
 
   return (
     <header className={classes.header}>
@@ -44,8 +47,8 @@ export default function Header() {
           open={isOpen}
           onClose={toggleDrawer}
           className={classes.drawer}
-          direction="top"
-          size="10.5rem"
+          direction="right"
+          // size="10.5rem"
         >
           <div>
             <ol className={classes.drawerLists}>
@@ -57,6 +60,9 @@ export default function Header() {
               </li>
               <li onClick={clickLevelupCalNoticeHandler}>
                 <Link href="/levelup-cal">ㄴ주의사항</Link>
+              </li>
+              <li onClick={clickLevelupCalTableHandler}>
+                <Link href="/levelup-cal/levelupTable">레벨별 필요 경험치</Link>
               </li>
               <li onClick={clickCommentsHandler}>
                 <Link href="/comments">마이홈 소통 게시판</Link>
@@ -73,8 +79,12 @@ export default function Header() {
           <li>
             <Link href="/levelup-cal">레벨업 계산기</Link>
           </li>
+
           <li>
             <Link href="/levelup-cal/notice">레벨업 계산기 주의사항</Link>
+          </li>
+          <li>
+            <Link href="/levelup-cal/levelupTable">레벨별 필요 경험치</Link>
           </li>
           <li>
             <Link href="/comments">소통 게시판</Link>

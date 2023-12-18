@@ -1,5 +1,6 @@
 import dataArr from "@/src/data/dataArr";
 import classes from "./LevelupResult.module.css";
+import { Man } from "@/src/calculate";
 
 export default function LevelupResult(props) {
   // console.log(props.itemId);
@@ -7,21 +8,21 @@ export default function LevelupResult(props) {
   // console.log(itemArr);
   const pickedItem = itemArr.find((item) => item.id === +props.itemId);
 
-  function Man(num) {
-    if (num < 10000) {
-      return num;
-    }
-    if (num < 100000000) {
-      let man = Math.floor(num / 10000);
-      let one = num - man * 10000;
-      return man + "만 " + one;
-    }
-    if (num < 1000000000000) {
-      let uck = Math.floor(num / 100000000);
-      let man = Math.floor((num - uck * 100000000) / 10000);
-      return uck + "억 " + man + "만";
-    }
-  }
+  // function Man(num) {
+  //   if (num < 10000) {
+  //     return num;
+  //   }
+  //   if (num < 100000000) {
+  //     let man = Math.floor(num / 10000);
+  //     let one = num - man * 10000;
+  //     return man + "만 " + one;
+  //   }
+  //   if (num < 1000000000000) {
+  //     let uck = Math.floor(num / 100000000);
+  //     let man = Math.floor((num - uck * 100000000) / 10000);
+  //     return uck + "억 " + man + "만";
+  //   }
+  // }
 
   console.log(pickedItem);
   return (

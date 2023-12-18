@@ -43,6 +43,25 @@ const itemArr = [
   },
 ];
 
+export function Man(num) {
+  if (isNaN(num)) {
+    return num;
+  }
+  if (num < 10000) {
+    return num;
+  }
+  if (num < 100000000) {
+    let man = Math.floor(num / 10000);
+    let one = num - man * 10000;
+    return man + "만 " + one;
+  }
+  if (num < 1000000000000) {
+    let uck = Math.floor(num / 100000000);
+    let man = Math.floor((num - uck * 100000000) / 10000);
+    return uck + "억 " + man + "만";
+  }
+}
+
 export function clickHanlder() {
   console.log("src폴더에 있는 calcultate에서 버튼을 눌렀습니다");
 }
