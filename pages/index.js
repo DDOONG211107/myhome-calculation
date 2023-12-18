@@ -59,6 +59,13 @@ export default function Home() {
     <>
       <Head>
         <title>마이홈 계산기</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon/favicon.jpg"
+          type="image/jpg"
+          sizes="any"
+        />
         <meta
           name="description"
           content="놀러와 마이홈의 생단 효율을 계산할 수 있어요"
