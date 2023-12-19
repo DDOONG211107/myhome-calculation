@@ -89,7 +89,8 @@
     text-align: left;
     background-color: rgb(188, 243, 186);
     margin: 0rem 10%;
-    padding: 0.2rem 1rem 0 0.3rem;
+    /* padding: 0.2rem 1rem 0 0.3rem; */
+    padding: 0.5rem;
     display: block;
     border-bottom: 1px solid #0d1014;
     height: 6rem;
@@ -99,7 +100,7 @@
     text-align: left;
     background-color: rgb(173, 211, 255);
     margin: 0rem 10%;
-    padding: 0.2rem 1rem 0 0.3rem;
+    padding: 0.5rem;
     display: block;
     border-bottom: 1px solid #0d1014;
     height: 6rem;
@@ -109,9 +110,10 @@
     text-align: left;
     background-color: rgb(238, 207, 207);
     margin: 0rem 10%;
-    padding: 0.2rem 1rem 0 0.3rem;
+    padding: 0.5rem;
     display: block;
     border-bottom: 1px solid #0d1014;
+    height: 6rem;
   }
   .firstLabel {
     font-weight: 700;
